@@ -1,0 +1,48 @@
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-btn,
+.signup-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: green;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: darkgreen;
+}
+
+.signup-btn {
+  background-color: blue;
+}
+
+.signup-btn:hover {
+  background-color: darkblue;
+}

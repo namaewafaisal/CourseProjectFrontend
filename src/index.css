@@ -1,0 +1,77 @@
+/* index.css */
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+.navlink {
+    display: flex;
+    gap: 15px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.navlink a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--text-color);
+}
+.profile {
+    display: flex;
+    gap: 10px;
+}
+.profile a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+.logo a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.login-page {
+    background-color: rgba(38, 210, 38, 0.909);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.register-page {
+    background-color: rgb(32, 108, 202);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Optional hover effect */
+.login-page:hover {
+    background-color: darkgreen;
+}
+
+.login-page:hover {
+    color: var(--text-color);
+}
+.register-page:hover {
+    background-color: darkblue;
+} 
+
+.register-page:hover {
+    background-color: darkblue;
+    color: var(--text-color);
+}
