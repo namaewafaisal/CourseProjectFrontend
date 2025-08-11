@@ -4,6 +4,9 @@ function Courses() {
   return (
     <>
       <Header/>
+      <div className='search-bar'>
+         <input type="text" placeholder="Search courses"/>
+      </div>
       <div>Courses</div>
     </>
   )

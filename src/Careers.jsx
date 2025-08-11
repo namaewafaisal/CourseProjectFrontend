@@ -3,6 +3,9 @@ function Careers() {
   return (
     <>
       <Header/>
+      <div className='search-bar'>
+         <input type="text" placeholder="Search careers"/>
+      </div>
       <div>Careers</div>
     </>
   )
