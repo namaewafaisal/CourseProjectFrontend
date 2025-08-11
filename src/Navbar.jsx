@@ -1,17 +1,31 @@
-import { Link, useLocation } from 'react-router-dom';
-import React from 'react';
-import './Navbar.css'; // Assuming you have a CSS file for styling
+import { Link, useLocation } from 'react-router-dom'
+import React from 'react'
+
 function Navbar() {
-  const location = useLocation();
+  const location = useLocation()
+
+  const linkClass = (path) =>
+    `px-2 no-underline ${
+      location.pathname === path
+        ? 'font-bold underline underline-offset-4 text-white'
+        : 'hover:underline hover:underline-offset-4 text-text'
+    }`
+
   return (
-    <>
-        <div className="navlink">
-          <Link to="/" className={`nav-btn ${location.pathname === '/' ? "active" : ""}`}>Home</Link>
-          <Link to="/careers" className={`nav-btn ${location.pathname === '/careers' ? "active" : ""}`}>Careers</Link>
-          <Link to="/courses" className={`nav-btn ${location.pathname === '/courses' ? "active" : ""}`}>Courses</Link>
-          <Link to="/about" className={`nav-btn ${location.pathname === '/about' ? "active" : ""}`}>About</Link>
-        </div>
-    </>
+    <nav className="flex gap-4">
+      <Link to="/" className={linkClass('/')}>
+        Home
+      </Link>
+      <Link to="/careers" className={linkClass('/careers')}>
+        Careers
+      </Link>
+      <Link to="/courses" className={linkClass('/courses')}>
+        Courses
+      </Link>
+      <Link to="/about" className={linkClass('/about')}>
+        About
+      </Link>
+    </nav>
   )
 }
 

@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <Header/>
-      <div>About</div>
+      <div className='text-center m-10'>About</div>
     </>
   )
 }

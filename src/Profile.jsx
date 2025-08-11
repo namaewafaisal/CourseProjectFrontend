@@ -3,9 +3,19 @@ import { Link } from 'react-router-dom'
 
 function Profile() {
   return (
-    <div className="profile">
-      <Link to="/login" className='login-page'>Login</Link>
-      <Link to="/register" className='register-page'>Register</Link>
+    <div className="flex gap-2">
+      <Link
+        to="/login"
+        className="bg-[var(--login-color)] text-white px-4 py-2 rounded hover:bg-green-900"
+      >
+        Login
+      </Link>
+      <Link
+        to="/register"
+        className="bg-[var(--register-color)] text-white px-4 py-2 rounded hover:bg-blue-900"
+      >
+        Register
+      </Link>
     </div>
   )
 }
