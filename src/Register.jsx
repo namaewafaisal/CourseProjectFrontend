@@ -1,38 +1,56 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Header from './Header'
 
 function Register() {
   return (
-    <div className='register-container'>
-    <div className='register'>
-      <h2>Create an Account</h2>
-      <form className='register-form'>
-        <table>
-          <tbody>
-            <tr>
-              <td><label htmlFor='username'>Username</label></td>
-              <td><input type='text' id='username' name='username' placeholder='Enter your username' required /></td>
-            </tr>
-            <tr>
-              <td><label htmlFor='email'>Email</label></td>
-              <td><input type='email' id='email' name='email' placeholder='Enter your email' required /></td>
-            </tr>
-            <tr>
-              <td><label htmlFor='password'>Password</label></td>
-              <td><input type='password' id='password' name='password' placeholder='Enter your password' required /></td>
-            </tr>
-            <tr>
-              <td><label htmlFor='confirm-password'>Confirm Password</label></td>
-              <td><input type='password' id='confirm-password' name='confirm-password' placeholder='Confirm your password' required /></td>
-            </tr>
-          </tbody>
-        </table>
-        <button type='submit'>Register</button>
-      </form>
-      <p>Already have an account?</p>
-      <Link to='/login' className='login-link'>Login here</Link>
+    <>
+      <Header />
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-black p-6">
+      <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 w-full max-w-md border border-white/20">
+        <h2 className="text-3xl font-bold text-center text-white mb-6">Create an Account</h2>
+        <form className="space-y-5">
+          <input
+            type="text"
+            placeholder="Username"
+            required
+            className="w-full px-4 py-3 rounded-xl bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            className="w-full px-4 py-3 rounded-xl bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            className="w-full px-4 py-3 rounded-xl bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            required
+            className="w-full px-4 py-3 rounded-xl bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all"
+          />
+          <button
+            type="submit"
+            className="w-full py-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl text-white font-semibold shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            Register
+          </button>
+        </form>
+        <p className="text-center text-gray-300 mt-6">
+          Already have an account?{' '}
+          <Link to="/login" className="text-purple-400 hover:underline">
+            Login here
+          </Link>
+        </p>
+      </div>
     </div>
-  </div>
-)
+  </>
+  )
 }
+
 export default Register

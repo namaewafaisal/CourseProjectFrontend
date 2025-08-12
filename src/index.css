@@ -1,5 +1,12 @@
 /* index.css */
 @import "tailwindcss";
+@theme {
+  --color-primary: hsl(220, 60%, 50%);
+  --color-secondary-start: #1e3a8a; /* blue-900 */
+  --color-secondary-mid: #6b21a8;   /* purple-900 */
+  --color-secondary-end: #000000;
+}
+
 :root {
   --bg-color: #121212e8;
   --text-color: #ffffff;

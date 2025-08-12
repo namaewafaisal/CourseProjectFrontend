@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Header from './Header'
+
 
 function Login() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-black p-6">
+    <>
+      <Header/>
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-black p-6">
       <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 w-full max-w-md border border-white/20">
         <h2 className="text-3xl font-bold text-center text-white mb-6">Login</h2>
         <form className="space-y-5">
@@ -35,6 +39,7 @@ function Login() {
         </p>
       </div>
     </div>
+    </>
   )
 }
 
